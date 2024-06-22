@@ -1,4 +1,4 @@
-import mongoose, { Schema, Document } from 'mongoose';
+import mongoose, { Schema, model } from 'mongoose';
 
 // SportsTeam Interface
 interface ISportsTeam {
@@ -30,4 +30,6 @@ let sportsTeamSchema = new Schema<ISportsTeam>({
   logoURL: { type: String, required: true },
 });
 
-export default mongoose.model<ISportsTeam>('SportsTeam', sportsTeamSchema);
+let SportsTeam = model<ISportsTeam>('SportsTeams', sportsTeamSchema);
+
+export default SportsTeam;
