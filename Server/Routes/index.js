@@ -15,5 +15,8 @@ router.get('/:id', (req, res, next) => {
 router.post('/create', (req, res, next) => {
     (0, SportsTeam_1.CreateSportsTeam)(req, res, next);
 });
+router.put('/update/:id', (req, res, next) => {
+    (0, SportsTeam_1.UpdateSportsTeam)(req, res, next);
+});
 exports.default = router;
 //# sourceMappingURL=index.js.map

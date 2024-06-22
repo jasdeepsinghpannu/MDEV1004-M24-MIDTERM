@@ -85,3 +85,44 @@ export function CreateSportsTeam(req:Request, res:Response, next:NextFunction): 
             });
 }
 
+
+
+/**
+ * This function takes a sportsTeam in the request params and creates an entry in the database
+ * 
+ * @param req 
+ * @param res 
+ * @param next 
+ */
+export function UpdateSportsTeam(req:Request, res: Response, next: NextFunction): void {
+    let id = req.params.id;
+
+    // ensure that id is valid
+    if(id.length!=24) {
+        res.status(400).json({success: false, msg: "A valid ID is required to retrieve a movie", data: ""});
+    }
+    else {
+        let players = (req.body.genres)? SanitizeArray(req.body.players as string) : SanitizeArray("");
+        let sportsTeam = new SportsTeam({
+        teamName: req.body.teamName as string,
+        sportType: req.body.sportType as string,
+        coach: req.body.coach as string,
+        captain: req.body.captain as string,
+        players: players,
+        homeVenue: req.body.homeVenue as string,
+        league: req.body.league as string,
+        championshipsWon: req.body.championshipsWon as number,
+        foundedYear: req.body.foundedYear as number,
+        websiteURL: req.body.websiteURL as string,
+        logoURL: req.body.logoURL as string,
+        });
+        
+        SportsTeam.create(sportsTeam)
+            .then(() => {
+                res.status(200).json({success: true, msg: "Sports Team Added Successfully", data: sportsTeam});
+            })
+            .catch((err) =>{
+                console.error(err);
+            });
+    }
+}
