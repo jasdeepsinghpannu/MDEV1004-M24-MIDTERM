@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UpdateSportsTeam = exports.CreateSportsTeam = exports.DisplaySportsTeamById = exports.DisplaySportsTeamList = void 0;
+exports.DeleteSportsTeam = exports.UpdateSportsTeam = exports.CreateSportsTeam = exports.DisplaySportsTeamById = exports.DisplaySportsTeamList = void 0;
 const SportsTeam_1 = __importDefault(require("../Models/SportsTeam"));
 const Util_1 = require("../Util");
 function DisplaySportsTeamList(req, res, next) {
@@ -68,7 +68,8 @@ function UpdateSportsTeam(req, res, next) {
     }
     else {
         let players = (req.body.genres) ? (0, Util_1.SanitizeArray)(req.body.players) : (0, Util_1.SanitizeArray)("");
-        let sportsTeam = new SportsTeam_1.default({
+        let sportsTeamToUpdate = new SportsTeam_1.default({
+            _id: id,
             teamName: req.body.teamName,
             sportType: req.body.sportType,
             coach: req.body.coach,
@@ -81,9 +82,9 @@ function UpdateSportsTeam(req, res, next) {
             websiteURL: req.body.websiteURL,
             logoURL: req.body.logoURL,
         });
-        SportsTeam_1.default.create(sportsTeam)
+        SportsTeam_1.default.updateOne({ _id: id }, sportsTeamToUpdate)
             .then(() => {
-            res.status(200).json({ success: true, msg: "Sports Team Added Successfully", data: sportsTeam });
+            res.status(200).json({ success: true, msg: "Sports Team Added Successfully", data: sportsTeamToUpdate });
         })
             .catch((err) => {
             console.error(err);
@@ -91,4 +92,20 @@ function UpdateSportsTeam(req, res, next) {
     }
 }
 exports.UpdateSportsTeam = UpdateSportsTeam;
+function DeleteSportsTeam(req, res, next) {
+    let id = req.params.id;
+    if (id.length != 24) {
+        res.status(400).json({ success: false, msg: "A valid ID is required to delete a sports team", data: "" });
+    }
+    else {
+        SportsTeam_1.default.deleteOne({ _id: id })
+            .then(() => {
+            res.status(200).json({ success: true, msg: "SportsTeam Deleted", data: id });
+        })
+            .catch((err) => {
+            console.error(err);
+        });
+    }
+}
+exports.DeleteSportsTeam = DeleteSportsTeam;
 //# sourceMappingURL=SportsTeam.js.map

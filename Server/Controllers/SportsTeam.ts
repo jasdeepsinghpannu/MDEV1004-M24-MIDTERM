@@ -103,7 +103,8 @@ export function UpdateSportsTeam(req:Request, res: Response, next: NextFunction)
     }
     else {
         let players = (req.body.genres)? SanitizeArray(req.body.players as string) : SanitizeArray("");
-        let sportsTeam = new SportsTeam({
+        let sportsTeamToUpdate = new SportsTeam({
+        _id: id,
         teamName: req.body.teamName as string,
         sportType: req.body.sportType as string,
         coach: req.body.coach as string,
@@ -117,12 +118,38 @@ export function UpdateSportsTeam(req:Request, res: Response, next: NextFunction)
         logoURL: req.body.logoURL as string,
         });
         
-        SportsTeam.create(sportsTeam)
+        SportsTeam.updateOne({_id: id}, sportsTeamToUpdate)
             .then(() => {
-                res.status(200).json({success: true, msg: "Sports Team Added Successfully", data: sportsTeam});
+                res.status(200).json({success: true, msg: "Sports Team Added Successfully", data: sportsTeamToUpdate});
             })
             .catch((err) =>{
                 console.error(err);
             });
+    }
+}
+
+
+/**
+ * This function is responsible for deleting a sports team by its id
+ * 
+ * @param req 
+ * @param res 
+ * @param next 
+ */
+export function DeleteSportsTeam(req:Request, res: Response, next:NextFunction): void {
+    let id = req.params.id;
+    
+    // ensure that id is valid
+    if(id.length!=24) {
+        res.status(400).json({success: false, msg: "A valid ID is required to delete a sports team", data: ""});
+    }
+    else {
+        SportsTeam.deleteOne({_id: id})
+        .then(() => {
+            res.status(200).json({success: true, msg: "SportsTeam Deleted", data:id})
+        })
+        .catch((err) => {
+            console.error(err);
+        })
     }
 }

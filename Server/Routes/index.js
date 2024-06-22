@@ -18,5 +18,8 @@ router.post('/create', (req, res, next) => {
 router.put('/update/:id', (req, res, next) => {
     (0, SportsTeam_1.UpdateSportsTeam)(req, res, next);
 });
+router.delete('/delete/:id', (req, res, next) => {
+    (0, SportsTeam_1.DeleteSportsTeam)(req, res, next);
+});
 exports.default = router;
 //# sourceMappingURL=index.js.map

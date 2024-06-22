@@ -1,5 +1,5 @@
 import express from 'express';
-import { DisplaySportsTeamList, DisplaySportsTeamById, CreateSportsTeam, UpdateSportsTeam } from '../Controllers/SportsTeam';
+import { DisplaySportsTeamList, DisplaySportsTeamById, CreateSportsTeam, UpdateSportsTeam, DeleteSportsTeam} from '../Controllers/SportsTeam';
 
 
 const router = express.Router();
@@ -28,6 +28,12 @@ router.post('/create', (req, res, next) => {
 router.put('/update/:id', (req, res, next) => {
   // Display some data
   UpdateSportsTeam(req,res,next);
+});
+
+/* Delete Movie through Id. */
+router.delete('/delete/:id', (req, res, next) => {
+  // Display some data
+  DeleteSportsTeam(req,res,next);
 });
 
 export default router;
