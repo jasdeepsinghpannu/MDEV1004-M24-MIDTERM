@@ -9,5 +9,8 @@ const router = express_1.default.Router();
 router.get('/', function (req, res, next) {
     (0, SportsTeam_1.DisplaySportsTeamList)(req, res, next);
 });
+router.get('/:id', (req, res, next) => {
+    (0, SportsTeam_1.DisplaySportsTeamById)(req, res, next);
+});
 exports.default = router;
 //# sourceMappingURL=index.js.map
