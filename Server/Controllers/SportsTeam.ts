@@ -1,5 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import SportsTeam from '../Models/SportsTeam';
+import { SanitizeArray } from '../Util';
 
 
 /**
@@ -48,5 +49,39 @@ export function DisplaySportsTeamById(req: Request, res: Response, next:NextFunc
             console.error(err);
         })
     }
+}
+
+
+
+/**
+ * This functions adds a sports team into the database
+ * 
+ * @param req 
+ * @param res 
+ * @param next 
+ */
+export function CreateSportsTeam(req:Request, res:Response, next:NextFunction): void {
+    let players = (req.body.genres)? SanitizeArray(req.body.players as string) : SanitizeArray("");
+    let sportsTeam = new SportsTeam({
+        teamName: req.body.teamName as string,
+        sportType: req.body.sportType as string,
+        coach: req.body.coach as string,
+        captain: req.body.captain as string,
+        players: players,
+        homeVenue: req.body.homeVenue as string,
+        league: req.body.league as string,
+        championshipsWon: req.body.championshipsWon as number,
+        foundedYear: req.body.foundedYear as number,
+        websiteURL: req.body.websiteURL as string,
+        logoURL: req.body.logoURL as string,
+        });
+        
+        SportsTeam.create(sportsTeam)
+            .then(() => {
+                res.status(200).json({success: true, msg: "Sports Team Added Successfully", data: sportsTeam});
+            })
+            .catch((err) =>{
+                console.error(err);
+            });
 }
 

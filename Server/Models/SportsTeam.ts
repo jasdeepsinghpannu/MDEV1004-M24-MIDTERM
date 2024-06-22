@@ -17,17 +17,17 @@ interface ISportsTeam {
 
 // Sports Team Schema
 let sportsTeamSchema = new Schema<ISportsTeam>({
-  teamName: { type: String, required: true },
-  sportType: { type: String, required: true },
-  coach: { type: String, required: true },
-  captain: { type: String, required: true },
-  players: { type: [String], required: true },
-  homeVenue: { type: String, required: true },
-  league: { type: String, required: true },
-  championshipsWon: { type: Number, default: 0 },
-  foundedYear: { type: Number, required: true },
-  websiteURL: { type: String, required: true },
-  logoURL: { type: String, required: true },
+  teamName: String,
+  sportType: String,
+  coach: String,
+  captain: String,
+  players: [String],
+  homeVenue: String,
+  league: String,
+  championshipsWon: Number,
+  foundedYear: Number,
+  websiteURL: String,
+  logoURL: String,
 }, { collection: 'sportsTeams' }); // Specified collection name here
 
 let SportsTeam = model<ISportsTeam>('SportsTeams', sportsTeamSchema);

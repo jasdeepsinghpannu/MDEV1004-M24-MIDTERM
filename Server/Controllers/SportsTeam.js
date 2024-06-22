@@ -3,8 +3,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.DisplaySportsTeamById = exports.DisplaySportsTeamList = void 0;
+exports.CreateSportsTeam = exports.DisplaySportsTeamById = exports.DisplaySportsTeamList = void 0;
 const SportsTeam_1 = __importDefault(require("../Models/SportsTeam"));
+const Util_1 = require("../Util");
 function DisplaySportsTeamList(req, res, next) {
     SportsTeam_1.default.find({})
         .then((data) => {
@@ -36,4 +37,28 @@ function DisplaySportsTeamById(req, res, next) {
     }
 }
 exports.DisplaySportsTeamById = DisplaySportsTeamById;
+function CreateSportsTeam(req, res, next) {
+    let players = (req.body.genres) ? (0, Util_1.SanitizeArray)(req.body.players) : (0, Util_1.SanitizeArray)("");
+    let sportsTeam = new SportsTeam_1.default({
+        teamName: req.body.teamName,
+        sportType: req.body.sportType,
+        coach: req.body.coach,
+        captain: req.body.captain,
+        players: players,
+        homeVenue: req.body.homeVenue,
+        league: req.body.league,
+        championshipsWon: req.body.championshipsWon,
+        foundedYear: req.body.foundedYear,
+        websiteURL: req.body.websiteURL,
+        logoURL: req.body.logoURL,
+    });
+    SportsTeam_1.default.create(sportsTeam)
+        .then(() => {
+        res.status(200).json({ success: true, msg: "Sports Team Added Successfully", data: sportsTeam });
+    })
+        .catch((err) => {
+        console.error(err);
+    });
+}
+exports.CreateSportsTeam = CreateSportsTeam;
 //# sourceMappingURL=SportsTeam.js.map

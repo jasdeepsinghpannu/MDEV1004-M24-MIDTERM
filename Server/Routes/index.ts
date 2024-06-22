@@ -1,5 +1,5 @@
 import express from 'express';
-import { DisplaySportsTeamList, DisplaySportsTeamById } from '../Controllers/SportsTeam';
+import { DisplaySportsTeamList, DisplaySportsTeamById, CreateSportsTeam } from '../Controllers/SportsTeam';
 
 
 const router = express.Router();
@@ -16,6 +16,12 @@ router.get('/', function(req, res, next) {
 router.get('/:id', (req, res, next) => {
   // Display some data
   DisplaySportsTeamById(req,res,next);
+});
+
+/* GET Sports Team through Id. */
+router.post('/create', (req, res, next) => {
+  // Display some data
+  CreateSportsTeam(req,res,next);
 });
 
 export default router;
