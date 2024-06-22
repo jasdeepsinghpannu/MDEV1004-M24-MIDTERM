@@ -61,7 +61,7 @@ export function DisplaySportsTeamById(req: Request, res: Response, next:NextFunc
  * @param next 
  */
 export function CreateSportsTeam(req:Request, res:Response, next:NextFunction): void {
-    let players = (req.body.genres)? SanitizeArray(req.body.players as string) : SanitizeArray("");
+    let players = (req.body.players)? SanitizeArray(req.body.players as string) : SanitizeArray("");
     let sportsTeam = new SportsTeam({
         teamName: req.body.teamName as string,
         sportType: req.body.sportType as string,

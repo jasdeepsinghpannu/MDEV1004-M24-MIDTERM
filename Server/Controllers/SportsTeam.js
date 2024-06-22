@@ -38,7 +38,7 @@ function DisplaySportsTeamById(req, res, next) {
 }
 exports.DisplaySportsTeamById = DisplaySportsTeamById;
 function CreateSportsTeam(req, res, next) {
-    let players = (req.body.genres) ? (0, Util_1.SanitizeArray)(req.body.players) : (0, Util_1.SanitizeArray)("");
+    let players = (req.body.players) ? (0, Util_1.SanitizeArray)(req.body.players) : (0, Util_1.SanitizeArray)("");
     let sportsTeam = new SportsTeam_1.default({
         teamName: req.body.teamName,
         sportType: req.body.sportType,

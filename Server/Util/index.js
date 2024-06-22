@@ -2,13 +2,12 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SanitizeArray = void 0;
 function SanitizeArray(inputString) {
-    if (Array.isArray(inputString)) {
-        return inputString.map((item) => String(item).trim()).filter((item) => item !== '');
+    let unsantiziedArray = inputString.split(',');
+    let sanitizedArray = Array();
+    for (const unsantizedString of unsantiziedArray) {
+        sanitizedArray.push(unsantizedString.trim());
     }
-    else {
-        let unsanitizedArray = inputString.split(',');
-        return unsanitizedArray.map((item) => item.trim()).filter((item) => item !== '');
-    }
+    return sanitizedArray;
 }
 exports.SanitizeArray = SanitizeArray;
 //# sourceMappingURL=index.js.map
