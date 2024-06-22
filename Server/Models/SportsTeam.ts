@@ -28,7 +28,7 @@ let sportsTeamSchema = new Schema<ISportsTeam>({
   foundedYear: { type: Number, required: true },
   websiteURL: { type: String, required: true },
   logoURL: { type: String, required: true },
-});
+}, { collection: 'sportsTeams' }); // Specified collection name here
 
 let SportsTeam = model<ISportsTeam>('SportsTeams', sportsTeamSchema);
 

@@ -13,7 +13,7 @@ let sportsTeamSchema = new mongoose_1.Schema({
     foundedYear: { type: Number, required: true },
     websiteURL: { type: String, required: true },
     logoURL: { type: String, required: true },
-});
+}, { collection: 'sportsTeams' });
 let SportsTeam = (0, mongoose_1.model)('SportsTeams', sportsTeamSchema);
 exports.default = SportsTeam;
 //# sourceMappingURL=SportsTeam.js.map
