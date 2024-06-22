@@ -1,0 +1,382 @@
+[
+    {
+        "teamName": "Liverpool FC",
+        "gameType": "Soccer",
+        "coach": "Jurgen Klopp",
+        "captain": "Jordan Henderson",
+        "players": [
+            "Mohamed Salah",
+            "Sadio Mane",
+            "Virgil van Dijk",
+            "Trent Alexander-Arnold",
+            "Alisson Becker"
+        ],
+        "homeVenue": "Anfield",
+        "league": "Premier League",
+        "championshipsWon": 19,
+        "foundedYear": 1892,
+        "websiteURL": "https://www.liverpoolfc.com/",
+        "logoURL": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/1200px-Liverpool_FC.svg.png"
+    },
+    {
+        "teamName": "Melbourne Stars",
+        "gameType": "Cricket",
+        "coach": "David Hussey",
+        "captain": "Glenn Maxwell",
+        "players": [
+            "Marcus Stoinis",
+            "Nathan Coulter-Nile",
+            "Adam Zampa",
+            "Nicholas Pooran",
+            "Liam Hatcher"
+        ],
+        "homeVenue": "Melbourne Cricket Ground",
+        "league": "BBL",
+        "championshipsWon": 0,
+        "foundedYear": 2011,
+        "websiteURL": "https://www.melbournestars.com.au/",
+        "logoURL": "https://upload.wikimedia.org/wikipedia/en/thumb/5/52/Melbourne_Stars_logo.svg/1200px-Melbourne_Stars_logo.svg.png"
+    },
+    {
+        "teamName": "Paris Saint-Germain",
+        "gameType": "Soccer",
+        "coach": "Mauricio Pochettino",
+        "captain": "Marquinhos",
+        "players": [
+            "Kylian Mbappe",
+            "Neymar Jr.",
+            "Angel Di Maria",
+            "Marco Verratti",
+            "Keylor Navas"
+        ],
+        "homeVenue": "Parc des Princes",
+        "league": "Ligue 1",
+        "championshipsWon": 9,
+        "foundedYear": 1970,
+        "websiteURL": "https://en.psg.fr/",
+        "logoURL": "https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Paris_Saint-Germain_F.C..svg/1200px-Paris_Saint-Germain_F.C..svg.png"
+    },
+    {
+        "teamName": "Sydney Sixers",
+        "gameType": "Cricket",
+        "coach": "Greg Shipperd",
+        "captain": "Moises Henriques",
+        "players": [
+            "Josh Philippe",
+            "Daniel Hughes",
+            "Jordan Silk",
+            "Carlos Brathwaite",
+            "Ben Dwarshuis"
+        ],
+        "homeVenue": "Sydney Cricket Ground",
+        "league": "BBL",
+        "championshipsWon": 3,
+        "foundedYear": 2011,
+        "websiteURL": "https://www.sydneysixers.com.au/",
+        "logoURL": "https://upload.wikimedia.org/wikipedia/en/thumb/6/68/Sydney_Sixers_Logo.svg/1200px-Sydney_Sixers_Logo.svg.png"
+    },
+    {
+        "teamName": "FC Barcelona",
+        "gameType": "Soccer",
+        "coach": "Xavi Hernandez",
+        "captain": "Lionel Messi",
+        "players": [
+            "Antoine Griezmann",
+            "Frenkie de Jong",
+            "Gerard Pique",
+            "Jordi Alba",
+            "Marc-Andre ter Stegen"
+        ],
+        "homeVenue": "Camp Nou",
+        "league": "La Liga",
+        "championshipsWon": 26,
+        "foundedYear": 1899,
+        "websiteURL": "https://www.fcbarcelona.com/",
+        "logoURL": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png"
+    },
+    {
+        "teamName": "Perth Scorchers",
+        "gameType": "Cricket",
+        "coach": "Adam Voges",
+        "captain": "Mitchell Marsh",
+        "players": [
+            "Jason Roy",
+            "Ashton Turner",
+            "Colin Munro",
+            "Jhye Richardson",
+            "Andrew Tye"
+        ],
+        "homeVenue": "Optus Stadium",
+        "league": "BBL",
+        "championshipsWon": 3,
+        "foundedYear": 2011,
+        "websiteURL": "https://www.perthscorchers.com.au/",
+        "logoURL": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Perth_Scorchers_logo.svg/1200px-Perth_Scorchers_logo.svg.png"
+    },
+    {
+        "teamName": "Juventus FC",
+        "gameType": "Soccer",
+        "coach": "Massimiliano Allegri",
+        "captain": "Giorgio Chiellini",
+        "players": [
+            "Cristiano Ronaldo",
+            "Paulo Dybala",
+            "Federico Chiesa",
+            "Juan Cuadrado",
+            "Wojciech Szczesny"
+        ],
+        "homeVenue": "Allianz Stadium",
+        "league": "Serie A",
+        "championshipsWon": 36,
+        "foundedYear": 1897,
+        "websiteURL": "https://www.juventus.com/",
+        "logoURL": "https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Juventus_FC_2017_logo.svg/1200px-Juventus_FC_2017_logo.svg.png"
+    },
+    {
+        "teamName": "Sydney FC",
+        "gameType": "Soccer",
+        "coach": "Steve Corica",
+        "captain": "Alex Wilkinson",
+        "players": [
+            "Kosta Barbarouses",
+            "Milos Ninkovic",
+            "Rhyan Grant",
+            "Adam Le Fondre",
+            "Andrew Redmayne"
+        ],
+        "homeVenue": "Sydney Cricket Ground",
+        "league": "A-League",
+        "championshipsWon": 5,
+        "foundedYear": 2004,
+        "websiteURL": "https://www.sydneyfc.com/",
+        "logoURL": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Sydney_FC.svg/1200px-Sydney_FC.svg.png"
+    },
+    {
+        "teamName": "Adelaide Strikers",
+        "gameType": "Cricket",
+        "coach": "Jason Gillespie",
+        "captain": "Alex Carey",
+        "players": [
+            "Travis Head",
+            "Phil Salt",
+            "Rashid Khan",
+            "Peter Siddle",
+            "Danny Briggs"
+        ],
+        "homeVenue": "Adelaide Oval",
+        "league": "BBL",
+        "championshipsWon": 1,
+        "foundedYear": 2011,
+        "websiteURL": "https://www.adelaidestrikers.com.au/",
+        "logoURL": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Adelaide_Strikers_logo.svg/1200px-Adelaide_Strikers_logo.svg.png"
+    },
+    {
+        "teamName": "AC Milan",
+        "gameType": "Soccer",
+        "coach": "Stefano Pioli",
+        "captain": "Gianluigi Donnarumma",
+        "players": [
+            "Zlatan Ibrahimovic",
+            "Sandro Tonali",
+            "Franck Kessie",
+            "Theo Hernandez",
+            "Davide Calabria"
+        ],
+        "homeVenue": "San Siro",
+        "league": "Serie A",
+        "championshipsWon": 18,
+        "foundedYear": 1899,
+        "websiteURL": "https://www.acmilan.com/",
+        "logoURL": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/AC_Milan.svg/1200px-AC_Milan.svg.png"
+    },
+    {
+        "teamName": "Rajasthan Royals",
+        "gameType": "Cricket",
+        "coach": "Kumar Sangakkara",
+        "captain": "Sanju Samson",
+        "players": [
+            "Jos Buttler",
+            "Ben Stokes",
+            "Jofra Archer",
+            "Chris Morris",
+            "Shivam Dube"
+        ],
+        "homeVenue": "Sawai Mansingh Stadium",
+        "league": "IPL",
+        "championshipsWon": 1,
+        "foundedYear": 2008,
+        "websiteURL": "https://www.rajasthanroyals.com/",
+        "logoURL": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/Rajasthan_Royals_Logo.svg/1200px-Rajasthan_Royals_Logo.svg.png"
+    },
+    {
+        "teamName": "Brisbane Heat",
+        "gameType": "Cricket",
+        "coach": "Darren Lehmann",
+        "captain": "Chris Lynn",
+        "players": [
+            "Joe Burns",
+            "Marnus Labuschagne",
+            "Mitchell Swepson",
+            "Jimmy Peirson",
+            "Mark Steketee"
+        ],
+        "homeVenue": "The Gabba",
+        "league": "BBL",
+        "championshipsWon": 2,
+        "foundedYear": 2011,
+        "websiteURL": "https://www.brisbaneheat.com.au/",
+        "logoURL": "https://upload.wikimedia.org/wikipedia/en/thumb/6/64/Brisbane_Heat.svg/1200px-Brisbane_Heat.svg.png"
+    },
+    {
+        "teamName": "Bayern Munich",
+        "gameType": "Soccer",
+        "coach": "Julian Nagelsmann",
+        "captain": "Manuel Neuer",
+        "players": [
+            "Robert Lewandowski",
+            "Thomas Muller",
+            "Joshua Kimmich",
+            "Leroy Sane",
+            "Alphonso Davies"
+        ],
+        "homeVenue": "Allianz Arena",
+        "league": "Bundesliga",
+        "championshipsWon": 31,
+        "foundedYear": 1900,
+        "websiteURL": "https://fcbayern.com/",
+        "logoURL": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/FC_Bayern_München_logo_%282017%29.svg/1200px-FC_Bayern_München_logo_%282017%29.svg.png"
+    },
+    {
+        "teamName": "RCB - Royal Challengers Bangalore",
+        "gameType": "Cricket",
+        "coach": "Simon Katich",
+        "captain": "Virat Kohli",
+        "players": [
+            "AB de Villiers",
+            "Glenn Maxwell",
+            "Devdutt Padikkal",
+            "Yuzvendra Chahal",
+            "Mohammed Siraj"
+        ],
+        "homeVenue": "M. Chinnaswamy Stadium",
+        "league": "IPL",
+        "championshipsWon": 0,
+        "foundedYear": 2008,
+        "websiteURL": "https://www.royalchallengers.com/",
+        "logoURL": "https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Royal_Challengers_Bangalore_Logo.svg/1200px-Royal_Challengers_Bangalore_Logo.svg.png"
+    },
+    {
+        "teamName": "Paris FC",
+        "gameType": "Soccer",
+        "coach": "René Girard",
+        "captain": "Vincent Demarconnay",
+        "players": [
+            "Julien Lopez",
+            "Ousmane Kanté",
+            "Sidy Sarr",
+            "Gaëtan Laura",
+            "Lamine Diaby-Fadiga"
+        ],
+        "homeVenue": "Stade Charléty",
+        "league": "Ligue 2",
+        "championshipsWon": 0,
+        "foundedYear": 1969,
+        "websiteURL": "https://www.parisfc.fr/",
+        "logoURL": "https://upload.wikimedia.org/wikipedia/en/thumb/7/78/Paris_FC_logo.svg/1200px-Paris_FC_logo.svg.png"
+    },
+    {
+        "teamName": "Sydney Thunder",
+        "gameType": "Cricket",
+        "coach": "Shane Bond",
+        "captain": "Usman Khawaja",
+        "players": [
+            "Alex Hales",
+            "Sam Billings",
+            "Chris Green",
+            "Daniel Sams",
+            "Tanveer Sangha"
+        ],
+        "homeVenue": "Sydney Showground Stadium",
+        "league": "BBL",
+        "championshipsWon": 1,
+        "foundedYear": 2011,
+        "websiteURL": "https://www.sydneythunder.com.au/",
+        "logoURL": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Sydney_Thunder_Logo.svg/1200px-Sydney_Thunder_Logo.svg.png"
+    },
+    {
+        "teamName": "ACF Fiorentina",
+        "gameType": "Soccer",
+        "coach": "Vincenzo Italiano",
+        "captain": "German Pezzella",
+        "players": [
+            "Dusan Vlahovic",
+            "Nikola Milenkovic",
+            "Gaetano Castrovilli",
+            "Federico Chiesa",
+            "Erick Pulgar"
+        ],
+        "homeVenue": "Stadio Artemio Franchi",
+        "league": "Serie A",
+        "championshipsWon": 2,
+        "foundedYear": 1926,
+        "websiteURL": "https://www.acffiorentina.com/",
+        "logoURL": "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/ACF_Fiorentina.svg/1200px-ACF_Fiorentina.svg.png"
+    },
+    {
+        "teamName": "Western Sydney Wanderers FC",
+        "gameType": "Soccer",
+        "coach": "Carl Robinson",
+        "captain": "Mitchell Duke",
+        "players": [
+            "Kwame Yeboah",
+            "James Troisi",
+            "Graham Dorrans",
+            "Mark Natta",
+            "Daniel Margush"
+        ],
+        "homeVenue": "Bankwest Stadium",
+        "league": "A-League",
+        "championshipsWon": 0,
+        "foundedYear": 2012,
+        "websiteURL": "https://www.wswanderersfc.com.au/",
+        "logoURL": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/Western_Sydney_Wanderers_FC_logo.svg/1200px-Western_Sydney_Wanderers_FC_logo.svg.png"
+    },
+    {
+        "teamName": "Otago Volts",
+        "gameType": "Cricket",
+        "coach": "Rob Walter",
+        "captain": "Jacob Duffy",
+        "players": [
+            "Neil Broom",
+            "Hamish Rutherford",
+            "Nick Kelly",
+            "Michael Rae",
+            "Anaru Kitchen"
+        ],
+        "homeVenue": "University Oval",
+        "league": "Super Smash",
+        "championshipsWon": 3,
+        "foundedYear": 1877,
+        "websiteURL": "https://www.otagocricket.co.nz/",
+        "logoURL": "https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Otago_Cricket_Logo.svg/1200px-Otago_Cricket_Logo.svg.png"
+    },
+    {
+        "teamName": "Tottenham Hotspur FC",
+        "gameType": "Soccer",
+        "coach": "Antonio Conte",
+        "captain": "Harry Kane",
+        "players": [
+            "Heung-Min Son",
+            "Hugo Lloris",
+            "Sergio Reguilon",
+            "Pierre-Emile Hojbjerg",
+            "Dele Alli"
+        ],
+        "homeVenue": "Tottenham Hotspur Stadium",
+        "league": "Premier League",
+        "championshipsWon": 2,
+        "foundedYear": 1882,
+        "websiteURL": "https://www.tottenhamhotspur.com/",
+        "logoURL": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Tottenham_Hotspur.svg/1200px-Tottenham_Hotspur.svg.png"
+    }
+]
